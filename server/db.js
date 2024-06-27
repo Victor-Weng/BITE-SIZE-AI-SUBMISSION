@@ -5,7 +5,7 @@ const { Pool } = require('pg');
 console.log('POSTGRES_URL:', process.env.REACT_APP_POSTGRES_URL);
 
 const pool = new Pool({
-  connectionString: "postgres://default:BSRwY4ZIF2Px@ep-crimson-frost-a1i93kjl-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require?sslmode=require" // process.env.REACT_APP_POSTGRES_URL
+  connectionString: process.env.REACT_APP_POSTGRES_URL
 });
 
 pool.on('error', (err) => {
