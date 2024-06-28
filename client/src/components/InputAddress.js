@@ -63,7 +63,7 @@ const InputAddress = () => {
                 address: placeDetails.name,
                 summary: summary,
             };
-            const response = await fetch('/bites', {
+            const response = await fetch('https://bite-size-ai-backend.vercel.app/bites', {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body),
