@@ -16,7 +16,7 @@ const ShowSummary = ({ placeDetails }) => {
                 console.log("Fetched bite data:", jsonData); // Log fetched data
                 setBite(jsonData);
             } catch (err) {
-                console.error(err.message);
+                console.error("Error from ShowSummary :", err.message);
             }
         };
 
