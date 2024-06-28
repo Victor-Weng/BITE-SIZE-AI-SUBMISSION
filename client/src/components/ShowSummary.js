@@ -8,7 +8,7 @@ const ShowSummary = ({ placeDetails }) => {
     useEffect(() => {
         const fetchLatestBite = async () => {
             try {
-                const response = await fetch(`/bites/latest`);
+                const response = await fetch(`https://bite-size-ai-backend.vercel.app/bites/latest`);
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
