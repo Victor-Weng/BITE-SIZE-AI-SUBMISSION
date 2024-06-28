@@ -43,3 +43,5 @@ app.get(`/bites/latest`, async (req, res) => {
 app.listen(() => {
     console.log("Server has started.");
 });
+
+module.exports = app;
